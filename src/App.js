@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-// import './App.css';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { UsersDetails, UsersList } from './pages';
 import { Header } from './components';
+import api from './API';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -12,8 +12,11 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`https://randomuser.me/api/?results=${resultsNumber}`)
-        .then((response) => response.json())
+      api
+        .get(`/?results=${resultsNumber}`)
+        .then((response) => {
+          return response.data;
+        })
         .then((data) => {
           setUsers(data.results);
           setLoading(false);
