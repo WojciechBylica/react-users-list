@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { formatDate, personName, userAddress } from '../../helpers';
 import UserWrapper from '../user-wrapper';
 import './style.css';
 
@@ -7,42 +8,24 @@ const User = ({ user, link }) => {
   const lastName = user?.name?.last;
   const location = user?.location;
   const email = user?.email;
-  const registrationDate = user?.registrationDate;
+  const registrationDate = user?.registered?.date;
   const avatar = user?.picture?.thumbnail;
-
-  const formatDate = (date) =>
-    new Date(date).toLocaleDateString('en-Us', {
-      weekday: 'long',
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric',
-    });
 
   return (
     <UserWrapper link={link}>
       <h2 className="user__header">
         <img
-          style={{ borderRadius: '100%' }}
+          className="user__avatar"
           width={48}
           height={48}
           src={avatar}
           alt="avatar"
         />
-        <span style={{ marginLeft: '8px' }}>
-          {firstName} {lastName}
-        </span>
+        <span className="user__person">{personName(firstName, lastName)}</span>
       </h2>
-      <ul style={{ textAlign: 'left' }}>
-        <li>
-          {firstName && lastName
-            ? `${firstName} ${lastName}`
-            : 'no first or last name provided'}
-        </li>
-        <li>
-          {location?.street?.name && location?.street?.number && location?.city
-            ? `${location.street.name} ${location.street.number} ${location.city}`
-            : 'no address provided'}{' '}
-        </li>
+      <ul className="user__list">
+        <li>{personName(firstName, lastName)}</li>
+        <li>{userAddress(location)}</li>
         <li>{email}</li>
         <li>registered: {formatDate(registrationDate)}</li>
       </ul>
