@@ -17,15 +17,16 @@ const UsersList = ({ users, loading, hasError, resultsNumber }) => {
           ready={!loading}
           customPlaceholder={<Placeholders resultsNumber={resultsNumber} />}
         >
-          {users.map((user) => (
-            <Link
-              to={`/users/${user.login.uuid}`}
-              key={user.login.uuid}
-              className="usersList__link"
-            >
-              <User user={user} />
-            </Link>
-          ))}
+          {users &&
+            users.map((user) => (
+              <Link
+                to={`/users/${user.login.uuid}`}
+                key={user.login.uuid}
+                className="usersList__link"
+              >
+                <User user={user} link />
+              </Link>
+            ))}
         </ReactPlaceholder>
       </main>
       <Footer />
@@ -44,4 +45,5 @@ UsersList.propTypes = {
 
 UsersList.defaultProps = {
   resultsNumber: 10,
+  hasError: true,
 };

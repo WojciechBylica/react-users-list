@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import UserWrapper from '../user-wrapper';
 import './style.css';
 
-const User = ({ user }) => {
+const User = ({ user, link }) => {
   const firstName = user?.name?.first;
   const lastName = user?.name?.last;
   const location = user?.location;
@@ -19,7 +19,7 @@ const User = ({ user }) => {
     });
 
   return (
-    <UserWrapper>
+    <UserWrapper link={link}>
       <h2 className="user__header">
         <img
           style={{ borderRadius: '100%' }}
@@ -73,4 +73,5 @@ User.propTypes = {
       thumbnail: PropTypes.string.isRequired,
     }),
   }),
+  link: PropTypes.bool,
 };

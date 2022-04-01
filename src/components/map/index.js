@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import Error from '../error';
 import UserWrapper from '../user-wrapper';
 import '../user-wrapper/style.css';
 
 const Map = ({ user }) => {
-  const latitude = user?.location?.coordinates?.latitude;
-  const longitude = user?.location?.coordinates?.longitude;
+  const latitude = Number(user?.location?.coordinates?.latitude);
+  const longitude = Number(user?.location?.coordinates?.longitude);
+
+  if (!user?.location?.coordinates)
+    return <Error message="no map data provided..." />;
 
   return (
     <MapContainer
@@ -20,7 +24,7 @@ const Map = ({ user }) => {
       />
       <Marker position={[latitude, longitude]}>
         <Popup>
-          {user.name.first} {user.name.last}
+          {user?.name?.first} {user?.name?.last}
         </Popup>
       </Marker>
     </MapContainer>
@@ -29,5 +33,31 @@ const Map = ({ user }) => {
 export default Map;
 
 Map.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: PropTypes.shape({
+    name: PropTypes.shape({
+      first: PropTypes.string.isRequired,
+      last: PropTypes.string.isRequired,
+    }),
+    location: PropTypes.shape({
+      coordinates: PropTypes.shape({
+        latitude: PropTypes.string.isRequired,
+        longitude: PropTypes.string.isRequired,
+      }),
+    }),
+  }),
 };
+
+// Map.defaultProps = {
+//   user: {
+//     name: {
+//       first: 'John',
+//       last: 'Doe',
+//     },
+//     location: {
+//       coordinates: {
+//         latitude: '23',
+//         longitude: '-44',
+//       },
+//     },
+//   },
+// };

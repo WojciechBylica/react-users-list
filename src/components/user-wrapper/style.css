@@ -1,10 +1,18 @@
 .UserWrapper {
-     background-color: #8080802e;
-      padding: 8px;
-      margin: 16px 8px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 4px #130f0f;
-      width: 340px;
+    background-color: #8080802e;
+    padding: 8px;
+    margin: 16px 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #130f0f;
+    width: 340px;
+}
+
+.UserWrapper--link:hover {
+    box-shadow: 2px 2px 4px red;
+}
+
+.UserWrapper--link:active {
+    box-shadow: none;
 }
 
 .UserWrapper--map {
