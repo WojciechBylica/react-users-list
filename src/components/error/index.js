@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import './style.css';
 
-const Error = ({ message }) => <p>{message}</p>;
+const Error = ({ message }) => <p className="error">{message}</p>;
 
 export default Error;
 
