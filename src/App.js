@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { UsersDetails, UsersList } from './pages';
-import { Header } from './components';
+import { Footer, Header, Layout } from './components';
 import api from './API';
 
 function App() {
@@ -30,24 +30,27 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <UsersList
-              users={users}
-              loading={loading}
-              hasError={hasError}
-              resultsNumber={resultsNumber}
-            />
-          }
-        />
-        <Route path="/users/:id" element={<UsersDetails users={users} />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-    </>
+    <Layout>
+      {/* <Header /> */}
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <UsersList
+                users={users}
+                loading={loading}
+                hasError={hasError}
+                resultsNumber={resultsNumber}
+              />
+            }
+          />
+          <Route path="/users/:id" element={<UsersDetails users={users} />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </main>
+      {/* <Footer /> */}
+    </Layout>
   );
 }
 

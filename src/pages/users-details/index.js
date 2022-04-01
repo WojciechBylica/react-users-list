@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
-import { Error, Footer, Map, User } from '../../components';
+import { Error, Map, User } from '../../components';
+import { ScrollToTheTop } from '../../helpers';
 
 const UserDetails = ({ users }) => {
   const { id } = useParams();
@@ -10,11 +11,9 @@ const UserDetails = ({ users }) => {
 
   return (
     <>
-      <main>
-        <User user={user} />
-        <Map user={user} />
-      </main>
-      <Footer userDetails />
+      <ScrollToTheTop />
+      <User user={user} />
+      <Map user={user} />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Error, Footer, Loader, User } from '../../components';
+import { Error, Loader, User } from '../../components';
 import ReactPlaceholder from 'react-placeholder';
 import 'react-placeholder/lib/reactPlaceholder.css';
 import './style.css';
@@ -11,25 +11,22 @@ const UsersList = ({ users, loading, hasError, resultsNumber }) => {
 
   return (
     <>
-      <main>
-        {loading && <Loader />}
-        <ReactPlaceholder
-          ready={!loading}
-          customPlaceholder={<Placeholders resultsNumber={resultsNumber} />}
-        >
-          {users &&
-            users.map((user) => (
-              <Link
-                to={`/users/${user.login.uuid}`}
-                key={user.login.uuid}
-                className="usersList__link"
-              >
-                <User user={user} link />
-              </Link>
-            ))}
-        </ReactPlaceholder>
-      </main>
-      <Footer />
+      {loading && <Loader />}
+      <ReactPlaceholder
+        ready={!loading}
+        customPlaceholder={<Placeholders resultsNumber={resultsNumber} />}
+      >
+        {users &&
+          users.map((user) => (
+            <Link
+              to={`/users/${user.login.uuid}`}
+              key={user.login.uuid}
+              className="usersList__link"
+            >
+              <User user={user} link />
+            </Link>
+          ))}
+      </ReactPlaceholder>
     </>
   );
 };
