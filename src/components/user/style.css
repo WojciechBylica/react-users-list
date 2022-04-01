@@ -3,3 +3,16 @@
     align-items: center;
     margin: 0;
 }
+
+.user__avatar {
+    border-radius: 100%;
+
+}
+
+.user__person {
+    margin-left: 8px;
+}
+
+.user__list {
+    text-align: left;
+}
