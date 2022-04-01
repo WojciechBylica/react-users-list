@@ -1,0 +1,19 @@
+.header {
+    background: black;
+    color: white;
+}
+
+.header__box {
+    max-width: 1238px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.header__title {
+    margin: 0;
+    padding: 8px, 8px, 16px;
+}

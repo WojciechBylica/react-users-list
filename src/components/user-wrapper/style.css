@@ -1,0 +1,12 @@
+.UserWrapper {
+     background-color: #8080802e;
+      padding: 8px;
+      margin: 16px 8px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px #130f0f;
+      width: 340px;
+}
+
+.UserWrapper--map {
+    height: 340px;
+}
