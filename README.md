@@ -9,7 +9,7 @@ React app presenting random users data
 ## Demo
 [demo](https://wojciechbylica.github.io/react-users-list/ "React Users List")
 
-### Technical list
+## Technical list
 - react with hooks
 - unit tests: jest, enzyme
 - axios
@@ -21,8 +21,15 @@ React app presenting random users data
 - Flex
 - EC6+
 
-### Preview
+## Preview
 ![Preview](/public/users-list-preview.gif)
+
+## Description
+In this app:
+- you can check data of 10 users loaded from https://randomuser.me/
+- you are informed about loading - gets placeholder visualisations
+- you are informed about errors
+- you can check details of every user, see his/her localisation on a map and come back to the home page
 
 
 
