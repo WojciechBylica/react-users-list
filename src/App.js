@@ -1,33 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { UsersDetails, UsersList } from './pages';
-import { Footer, Header, Layout } from './components';
-import api from './API';
+import { Layout } from './components';
+import { useApp } from './useApp';
 
 function App() {
-  const [users, setUsers] = useState([]);
-  const [hasError, setError] = useState(false);
-  const [loading, setLoading] = useState(true);
-  let resultsNumber = 10;
-
-  useEffect(() => {
-    setTimeout(() => {
-      api
-        .get(`/?results=${resultsNumber}`)
-        .then((response) => {
-          return response.data;
-        })
-        .then((data) => {
-          setUsers(data.results);
-          setLoading(false);
-          setError(false);
-        })
-        .catch((error) => {
-          setError(true);
-          setLoading(false);
-        });
-    }, 1_000);
-  }, []);
+  const { users, hasError, loading, resultsNumber } = useApp();
 
   return (
     <Layout>
