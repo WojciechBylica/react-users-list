@@ -7,26 +7,29 @@ import Placeholders from './placeholders';
 import PropTypes from 'prop-types';
 
 const UsersList = ({ users, loading, hasError, resultsNumber }) => {
-  if (hasError) return <Error />;
+  if (hasError || (!!users && users.length === 0 && !loading))
+    return <Error data-test="usersList--error" />;
 
   return (
     <>
-      {loading && <Loader />}
-      <ReactPlaceholder
-        ready={!loading}
-        customPlaceholder={<Placeholders resultsNumber={resultsNumber} />}
-      >
-        {users &&
-          users.map((user) => (
-            <Link
-              to={`/users/${user.login.uuid}`}
-              key={user.login.uuid}
-              className="usersList__link"
-            >
-              <User user={user} link />
-            </Link>
-          ))}
-      </ReactPlaceholder>
+      {loading && <Loader data-test="usersList--loader" />}
+      <div>
+        <ReactPlaceholder
+          ready={!loading}
+          customPlaceholder={<Placeholders resultsNumber={resultsNumber} />}
+        >
+          {users &&
+            users.map((user) => (
+              <Link
+                to={`/users/${user.login.uuid}`}
+                key={user.login.uuid}
+                className="usersList__link"
+              >
+                <User user={user} link data-test="user" />
+              </Link>
+            ))}
+        </ReactPlaceholder>
+      </div>
     </>
   );
 };

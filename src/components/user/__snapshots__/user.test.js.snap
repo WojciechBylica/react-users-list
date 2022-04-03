@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ok 1`] = `
+<div
+  className="userWrapper"
+>
+  <h2
+    className="user__header"
+  >
+    <img
+      alt="avatar"
+      className="user__avatar"
+      height={48}
+      src="https://randomuser.me/api/portraits/thumb/men/6.jpg"
+      width={48}
+    />
+    <span
+      className="user__person"
+    >
+      Dominic Onderwater
+    </span>
+  </h2>
+  <ul
+    className="user__list"
+  >
+    <li>
+      Dominic Onderwater
+    </li>
+    <li>
+      Bontekamp 7174 Pieterburen
+    </li>
+    <li>
+      dominic.onderwater@example.com
+    </li>
+    <li>
+      registered: 
+      Thursday, December 11, 2014
+    </li>
+  </ul>
+</div>
+`;

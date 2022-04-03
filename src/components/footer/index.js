@@ -1,14 +1,9 @@
-import PropTypes from 'prop-types';
 import './style.css';
 
-const Footer = ({ userDetails }) => (
-  <footer className={userDetails ? 'footer footer--userDetails' : 'footer'}>
+const Footer = () => (
+  <footer className="footer">
     <p>Written for learning</p>
   </footer>
 );
 
 export default Footer;
-
-Footer.propTypes = {
-  userDetails: PropTypes.bool,
-};

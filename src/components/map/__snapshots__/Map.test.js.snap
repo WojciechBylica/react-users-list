@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders ok should render a container with map 1`] = `
+<div
+  className="userWrapper userWrapper--map"
+/>
+`;
+
+exports[`it renders ok should render an error message 1`] = `
+<p
+  className="error"
+  data-test="error"
+>
+  no map data provided...
+</p>
+`;

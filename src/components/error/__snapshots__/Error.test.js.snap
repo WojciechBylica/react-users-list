@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders ok should has default text if no prop provided 1`] = `
+<p
+  className="error"
+  data-test="error"
+>
+  an error has occurred... please check your internet connection and try again...
+</p>
+`;
+
+exports[`it renders ok should has text "testing error" if it was provided by props 1`] = `
+<p
+  className="error"
+  data-test="error"
+>
+  testing error
+</p>
+`;

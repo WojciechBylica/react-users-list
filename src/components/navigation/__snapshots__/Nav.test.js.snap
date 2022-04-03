@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render "Home" link 1`] = `
+<nav>
+  <a
+    className="navigation__link"
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</nav>
+`;

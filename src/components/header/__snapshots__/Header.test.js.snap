@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ok 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header__box"
+  >
+    <h1
+      className="header__title"
+    >
+      Users List
+    </h1>
+    <nav>
+      <a
+        className="navigation__link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </nav>
+  </div>
+</header>
+`;

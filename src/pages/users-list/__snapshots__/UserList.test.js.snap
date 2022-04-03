@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ok should render "loading" and 2 placeholders if loading is true 1`] = `
+Array [
+  <p>
+    loading...
+  </p>,
+  <div>
+    <div
+      className="userWrapper"
+    >
+      <div
+        className="media-block"
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        <div
+          className="round-shape"
+          style={
+            Object {
+              "backgroundColor": "#E0E0E0",
+              "borderRadius": "500rem",
+              "height": "100%",
+              "marginRight": 10,
+              "minHeight": 55,
+              "minWidth": 55,
+              "width": 55,
+            }
+          }
+        />
+        <div
+          className="text-block"
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": 0,
+                "maxHeight": "9.090909090909092%",
+                "width": "97%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "94%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "90%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "98%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "95%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="userWrapper"
+    >
+      <div
+        className="media-block"
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        <div
+          className="round-shape"
+          style={
+            Object {
+              "backgroundColor": "#E0E0E0",
+              "borderRadius": "500rem",
+              "height": "100%",
+              "marginRight": 10,
+              "minHeight": 55,
+              "minWidth": 55,
+              "width": 55,
+            }
+          }
+        />
+        <div
+          className="text-block"
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": 0,
+                "maxHeight": "9.090909090909092%",
+                "width": "97%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "94%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "90%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "98%",
+              }
+            }
+          />
+          <div
+            className="text-row"
+            style={
+              Object {
+                "backgroundColor": "#E0E0E0",
+                "height": "1em",
+                "marginTop": "0.7em",
+                "maxHeight": "9.090909090909092%",
+                "width": "95%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`should render ok should render error if empty user array provided 1`] = `
+<p
+  className="error"
+  data-test="error"
+>
+  an error has occurred... please check your internet connection and try again...
+</p>
+`;
+
+exports[`should render ok should render error if no props provided 1`] = `
+<p
+  className="error"
+  data-test="error"
+>
+  an error has occurred... please check your internet connection and try again...
+</p>
+`;
+
+exports[`should render ok should render list of 2 users 1`] = `
+<div>
+  <a
+    className="usersList__link"
+    href="/users/387b2ae0-2637-4599-b725-abb168c1241f"
+    onClick={[Function]}
+  >
+    <div
+      className="userWrapper userWrapper--link"
+    >
+      <h2
+        className="user__header"
+      >
+        <img
+          alt="avatar"
+          className="user__avatar"
+          height={48}
+          src="https://randomuser.me/api/portraits/thumb/men/6.jpg"
+          width={48}
+        />
+        <span
+          className="user__person"
+        >
+          Dominic Onderwater
+        </span>
+      </h2>
+      <ul
+        className="user__list"
+      >
+        <li>
+          Dominic Onderwater
+        </li>
+        <li>
+          Bontekamp 7174 Pieterburen
+        </li>
+        <li>
+          dominic.onderwater@example.com
+        </li>
+        <li>
+          registered: 
+          Thursday, December 11, 2014
+        </li>
+      </ul>
+    </div>
+  </a>
+  <a
+    className="usersList__link"
+    href="/users/ddc905ff-8cc6-4141-895a-fcebd72fe652"
+    onClick={[Function]}
+  >
+    <div
+      className="userWrapper userWrapper--link"
+    >
+      <h2
+        className="user__header"
+      >
+        <img
+          alt="avatar"
+          className="user__avatar"
+          height={48}
+          src="https://randomuser.me/api/portraits/thumb/women/48.jpg"
+          width={48}
+        />
+        <span
+          className="user__person"
+        >
+          Rosalyn Steward
+        </span>
+      </h2>
+      <ul
+        className="user__list"
+      >
+        <li>
+          Rosalyn Steward
+        </li>
+        <li>
+          Dublin Road 4496 Waterford
+        </li>
+        <li>
+          rosalyn.steward@example.com
+        </li>
+        <li>
+          registered: 
+          Saturday, June 30, 2018
+        </li>
+      </ul>
+    </div>
+  </a>
+</div>
+`;

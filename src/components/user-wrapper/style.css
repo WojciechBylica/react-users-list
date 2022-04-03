@@ -1,4 +1,4 @@
-.UserWrapper {
+.userWrapper {
     background-color: #8080802e;
     padding: 8px;
     margin: 16px 8px;
@@ -7,14 +7,14 @@
     width: 340px;
 }
 
-.UserWrapper--link:hover {
+.userWrapper--link:hover {
     box-shadow: 2px 2px 4px red;
 }
 
-.UserWrapper--link:active {
+.userWrapper--link:active {
     box-shadow: none;
 }
 
-.UserWrapper--map {
+.userWrapper--map {
     height: 340px;
 }

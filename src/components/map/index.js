@@ -13,7 +13,7 @@ const Map = ({ user }) => {
 
   return (
     <MapContainer
-      className="UserWrapper UserWrapper--map"
+      className="userWrapper userWrapper--map"
       center={[latitude, longitude]}
       zoom={3}
     >
@@ -46,18 +46,3 @@ Map.propTypes = {
     }),
   }),
 };
-
-// Map.defaultProps = {
-//   user: {
-//     name: {
-//       first: 'John',
-//       last: 'Doe',
-//     },
-//     location: {
-//       coordinates: {
-//         latitude: '23',
-//         longitude: '-44',
-//       },
-//     },
-//   },
-// };
