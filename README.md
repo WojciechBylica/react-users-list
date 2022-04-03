@@ -1,3 +1,22 @@
+# React Users List
+React app presenting random users data
+- coded by Wojciech Bylica
+- 1-4.04.2022r
+
+## Demo
+[demo](https://wojciechbylica.github.io/react-users-list/ "React Users List")
+
+### Technical list
+- react with hooks
+- unit tests: jest, enzyme
+- axios
+- react-leaflet
+- prop-types
+- classNames with BEM
+
+### Preview
+![Preview](readmeImages/users-list-preview.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
