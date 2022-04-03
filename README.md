@@ -15,7 +15,7 @@ React app presenting random users data
 - classNames with BEM
 
 ### Preview
-![Preview](readmeImages/users-list-preview.gif)
+![Preview](/users-list-preview.gif)
 
 # Getting Started with Create React App
 
