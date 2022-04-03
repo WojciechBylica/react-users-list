@@ -7,3 +7,4 @@ export { default as Header } from './header';
 export { default as Nav } from './navigation';
 export { default as Footer } from './footer';
 export { default as Layout } from './layout';
+export { default as ScrollToTheTop } from './scroll-to-the-top';

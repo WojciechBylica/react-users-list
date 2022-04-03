@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
-import { Error, Map, User } from '../../components';
-import { ScrollToTheTop } from '../../helpers';
+import { Error, Map, User, ScrollToTheTop } from '../../components';
 
 const UserDetails = ({ users }) => {
   const { id } = useParams();
