@@ -1,5 +1,8 @@
 # React Users List
 React app presenting random users data
+
+![logo](/public/logo.png)
+
 - coded by Wojciech Bylica
 - 1-4.04.2022r
 
@@ -10,12 +13,18 @@ React app presenting random users data
 - react with hooks
 - unit tests: jest, enzyme
 - axios
+- react-router
 - react-leaflet
 - prop-types
-- classNames with BEM
+- html
+- css with BEM
+- Flex
+- EC6+
 
 ### Preview
-![Preview](users-list-preview.gif)
+![Preview](/public/users-list-preview.gif)
+
+
 
 # Getting Started with Create React App
 
