@@ -7,7 +7,7 @@ React app presenting random users data
 - 1-4.04.2022r
 
 ## Demo
-[demo](https://wojciechbylica.github.io/react-users-list/)
+https://wojciechbylica.github.io/react-users-list/
 
 ## Technical list
 - react with hooks
