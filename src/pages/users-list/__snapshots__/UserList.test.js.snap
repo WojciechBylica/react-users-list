@@ -248,7 +248,7 @@ exports[`should render ok should render list of 2 users 1`] = `
 <div>
   <a
     className="usersList__link"
-    href="/users/387b2ae0-2637-4599-b725-abb168c1241f"
+    href="#/users/387b2ae0-2637-4599-b725-abb168c1241f"
     onClick={[Function]}
   >
     <div
@@ -291,7 +291,7 @@ exports[`should render ok should render list of 2 users 1`] = `
   </a>
   <a
     className="usersList__link"
-    href="/users/ddc905ff-8cc6-4141-895a-fcebd72fe652"
+    href="#/users/ddc905ff-8cc6-4141-895a-fcebd72fe652"
     onClick={[Function]}
   >
     <div

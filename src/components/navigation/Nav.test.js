@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import Nav from '.';
 
 it('should render "Home" link', () => {
   const tree = renderer.create(
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
-    </BrowserRouter>
+    </HashRouter>
   );
   expect(tree).toMatchSnapshot();
 });

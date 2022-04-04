@@ -10,18 +10,18 @@ exports[`should render ok 1`] = `
     <h1
       className="header__title"
     >
+      Users List 
       <img
         alt="logo"
         height={50}
         src="/logo.png"
         width={50}
       />
-      Users List
     </h1>
     <nav>
       <a
         className="navigation__link"
-        href="/"
+        href="#/"
         onClick={[Function]}
       >
         Home

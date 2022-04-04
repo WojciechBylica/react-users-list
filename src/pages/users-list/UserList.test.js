@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import UsersList from '.';
 import renderer from 'react-test-renderer';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const users = [
   {
@@ -64,50 +64,50 @@ const users = [
 describe('should render ok', () => {
   it('should render list of 2 users', () => {
     const tree = renderer.create(
-      <BrowserRouter>
+      <HashRouter>
         <UsersList
           users={users}
           loading={false}
           hasError={false}
           resultsNumber={2}
         />
-      </BrowserRouter>
+      </HashRouter>
     );
     expect(tree).toMatchSnapshot();
   });
 
   it('should render error if empty user array provided', () => {
     const tree = renderer.create(
-      <BrowserRouter>
+      <HashRouter>
         <UsersList
           users={[]}
           loading={false}
           hasError={false}
           resultsNumber={2}
         />
-      </BrowserRouter>
+      </HashRouter>
     );
     expect(tree).toMatchSnapshot();
   });
 
   it('should render "loading" and 2 placeholders if loading is true', () => {
     const tree = renderer.create(
-      <BrowserRouter>
+      <HashRouter>
         <UsersList
           users={users}
           loading={true}
           hasError={false}
           resultsNumber={2}
         />
-      </BrowserRouter>
+      </HashRouter>
     );
     expect(tree).toMatchSnapshot();
   });
   it('should render error if no props provided', () => {
     const tree = renderer.create(
-      <BrowserRouter>
+      <HashRouter>
         <UsersList />
-      </BrowserRouter>
+      </HashRouter>
     );
     expect(tree).toMatchSnapshot();
   });

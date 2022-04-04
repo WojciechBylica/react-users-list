@@ -4,7 +4,7 @@ exports[`should render "Home" link 1`] = `
 <nav>
   <a
     className="navigation__link"
-    href="/"
+    href="#/"
     onClick={[Function]}
   >
     Home
