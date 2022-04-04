@@ -14,10 +14,3 @@ body {
   background-image: radial-gradient(circle, rgba(229, 232, 241, 1) 19%, rgba(64, 98, 192, 1) 100%);
   background-attachment: fixed;
 }
-
-main {
-  display: flex;
-  justify-Content: center;
-  flex-direction: column;
-  align-items: center;
-}
