@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react';
 import { Route, Routes, Navigate, HashRouter } from 'react-router-dom';
 import { UsersDetails, UsersList } from './pages';
 import { Layout } from './components';
-import { useApp } from './useApp';
+import { useGetData } from './useGetData';
 
 function App() {
-  const { users, hasError, loading, resultsNumber } = useApp();
+  const { users, hasError, loading, resultsNumber } = useGetData();
 
   return (
     <Layout>

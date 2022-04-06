@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from './API';
 
-export const useApp = () => {
+export const useGetData = () => {
   const [users, setUsers] = useState([]);
   const [hasError, setError] = useState(false);
   const [loading, setLoading] = useState(true);
