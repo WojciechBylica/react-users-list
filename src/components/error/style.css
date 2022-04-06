@@ -1,6 +1,6 @@
 .error {
     font-size: large;
-    color: red;
-    border: 1px solid red;
+    color: #ff0000;
+    border: 1px solid #ff0000;
     padding: 16px;
 }

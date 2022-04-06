@@ -8,7 +8,7 @@
 }
 
 .userWrapper--link:hover {
-    box-shadow: 2px 2px 4px rgb(17, 0, 255);
+    box-shadow: 2px 2px 4px #1100ff;
 }
 
 .userWrapper--link:active {

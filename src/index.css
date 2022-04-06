@@ -10,7 +10,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(229, 232, 241, 1);
-  background-image: radial-gradient(circle, rgba(229, 232, 241, 1) 19%, rgba(64, 98, 192, 1) 100%);
+  background-color: #e5e8f1;
+  background-image: radial-gradient(circle, #e5e8f1 19%, #4062c0 100%);
   background-attachment: fixed;
 }
