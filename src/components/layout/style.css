@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    justify-Content: center;
     align-items: center;
     min-height: 100vh;
 }
