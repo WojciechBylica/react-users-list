@@ -1,3 +1,1 @@
-const Loader = () => <p>loading...</p>;
-
-export default Loader;
+export { default } from './Loader';

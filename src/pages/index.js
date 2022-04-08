@@ -1,2 +1,2 @@
-export { default as UsersList } from './users-list/index';
-export { default as UsersDetails } from './users-details';
+export { default as UsersList } from './users-list/UserList';
+export { default as UsersDetails } from './users-details/UserDetails';

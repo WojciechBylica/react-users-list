@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Error from '.';
+import Error from './Error';
 import { shallow } from 'enzyme';
 
 //jest snapshots:
