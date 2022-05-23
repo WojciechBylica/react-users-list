@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bgColorPrimary);
+  background-image: radial-gradient(
+    circle,
+    var(--bgColorSecondary) 19%,
+    var(--bgColorPrimary) 100%
+  );
+  background-attachment: fixed;
+}

@@ -2,7 +2,9 @@
 
 exports[`should render ok should render "loading" and 2 placeholders if loading is true 1`] = `
 Array [
-  <p>
+  <p
+    className="loader"
+  >
     loading...
   </p>,
   <div>

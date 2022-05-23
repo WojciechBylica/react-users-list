@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './style.css';
+import './style.scss';
 
 const Error = ({ message }) => (
   <p className="error" data-test="error">

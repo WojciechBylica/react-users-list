@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { formatDate, personName, userAddress } from '../../helpers';
 import UserWrapper from '../user-wrapper/UserWrapper';
-import './style.css';
+import './style.scss';
 
 const User = ({ user, link }) => {
   const firstName = user?.name?.first;

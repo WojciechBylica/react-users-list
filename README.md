@@ -17,7 +17,7 @@ https://wojciechbylica.github.io/react-users-list/
 - react-leaflet
 - prop-types
 - html
-- css with BEM
+- sass with BEM
 - Flex
 - EC6+
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Error from '../error/Error';
 import UserWrapper from '../user-wrapper/UserWrapper';
-import '../user-wrapper/style.css';
+import '../user-wrapper/style.scss';
 
 const Map = ({ user }) => {
   const latitude = Number(user?.location?.coordinates?.latitude);

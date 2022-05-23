@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Error, Loader, User } from '../../components';
 import ReactPlaceholder from 'react-placeholder';
 import 'react-placeholder/lib/reactPlaceholder.css';
-import './style.css';
+import './style.scss';
 import Placeholders from './Placeholders';
 import PropTypes from 'prop-types';
 

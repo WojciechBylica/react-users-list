@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render text "loading..." 1`] = `
-<p>
+<p
+  className="loader"
+>
   loading...
 </p>
 `;

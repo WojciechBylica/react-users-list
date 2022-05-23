@@ -1,18 +1,16 @@
-.user__header {
+.user {
+  &__header {
     display: flex;
     align-items: center;
     margin: 0;
-}
-
-.user__avatar {
+  }
+  &__avatar {
     border-radius: 100%;
-
-}
-
-.user__person {
+  }
+  &__person {
     margin-left: 8px;
-}
-
-.user__list {
+  }
+  &__list {
     text-align: left;
+  }
 }

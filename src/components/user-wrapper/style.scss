@@ -1,0 +1,19 @@
+.userWrapper {
+  background-color: var(--bgColorUserWrapper);
+  color: var(--colorUserWrapper);
+  padding: 8px;
+  margin: 16px 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px var(--shadowColorUserWrapper);
+  width: 340px;
+
+  &--link:hover {
+    box-shadow: 2px 2px 4px var(--shadowColorUSerWrapperHover);
+  }
+  &--link:active {
+    box-shadow: none;
+  }
+  &--map {
+    height: 340px;
+  }
+}

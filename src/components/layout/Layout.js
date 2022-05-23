@@ -1,6 +1,6 @@
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
-import './style.css';
+import './style.scss';
 
 const Layout = ({ children }) => (
   <div className="layout">

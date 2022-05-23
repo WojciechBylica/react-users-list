@@ -3,7 +3,8 @@
 exports[`should render "Home" link 1`] = `
 <nav>
   <a
-    className="navigation__link"
+    aria-current="page"
+    className="navigation__link active"
     href="#/"
     onClick={[Function]}
   >
