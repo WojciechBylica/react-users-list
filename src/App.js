@@ -19,14 +19,6 @@ function App() {
     html.dataset.theme = `theme-${theme}`;
   };
 
-  // const [darkTheme, setDarkTheme] = useState(false);
-  // useEffect(() => {
-  //   console.log(`darkTheme z useEfecctu`, darkTheme);
-  // const root = document.documentElement;
-  // root?.style.setProperty('$lightTheme', darkTheme ? true : false);
-  // root.style.setProperty('$lightTheme', false);
-  //   console.log(root.style);
-  // }, []);
   return (
     <Layout>
       <main>

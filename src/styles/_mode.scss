@@ -1,107 +1,3 @@
-// $lightTheme: true;
-
-// @if $lightTheme {
-//   :root {
-//     --bgColorPrimary: #{$indigo};
-//     --bgColorSecondary: #{$mystic};
-//     --colorNavLink: #{$white};
-//     --bgColorUserList: #{$cornflowerBlue};
-//     --colorUsersList: #{$governorBay};
-//     --colorError: #{$red};
-//     --colorFooter: #{$white};
-//     --bgColorFooter: #{$black};
-//     --colorUserWrapper: #{$black};
-//     --bgColorUserWrapper: #{$gray-0-18};
-//     --shadowColorUserWrapper: #{$codeGray};
-//     --shadowColorUSerWrapperHover: #{$blue};
-//   }
-// } @else {
-//   :root {
-//     --bgColorPrimary: #{$indigo};
-//     --bgColorSecondary: #{$black};
-//     --colorNavLink: #{$white};
-//     --bgColorUserList: #{$white};
-//     --colorUsersList: #{$white};
-//     --colorError: #{$red};
-//     --colorFooter: #{$white};
-//     --bgColorFooter: #{$black};
-//     --colorUserWrapper: #{$white};
-//     --bgColorUserWrapper: #{$gray-0-18};
-//     --shadowColorUserWrapper: #{$codeGray};
-//     --shadowColorUSerWrapperHover: #{$blue};
-//   }
-// }
-
-//*******//
-
-// @if (data-theme: 'theme-light') {
-//   :root {
-//     --bgColorPrimary: #{$indigo};
-//     --bgColorSecondary: #{$mystic};
-//     --colorNavLink: #{$white};
-//     --bgColorUserList: #{$cornflowerBlue};
-//     --colorUsersList: #{$governorBay};
-//     --colorError: #{$red};
-//     --bgColorFooter: #{$black};
-//     --colorUserWrapper: #{$black};
-//     --bgColorUserWrapper: #{$gray-0-18};
-//     --shadowColorUserWrapper: #{$codeGray};
-//     --shadowColorUSerWrapperHover: #{$blue};
-//     --colorFooter: #{$white};
-//   }
-// } @else {
-//   :root {
-//     --bgColorPrimary: #{$indigo};
-//     --bgColorSecondary: #{$black};
-//     --colorNavLink: #{$white};
-//     --bgColorUserList: #{$white};
-//     --colorUsersList: #{$white};
-//     --colorError: #{$red};
-//     --colorFooter: #{$white};
-//     --bgColorFooter: #{$black};
-//     --colorUserWrapper: #{$white};
-//     --bgColorUserWrapper: #{$gray-0-18};
-//     --shadowColorUserWrapper: #{$codeGray};
-//     --shadowColorUSerWrapperHover: #{$blue};
-//   }
-// }
-
-//*******//
-
-// :root {
-//   --bgColorPrimary: #{$indigo};
-//   --bgColorSecondary: #{$mystic};
-//   --colorNavLink: #{$white};
-//   --bgColorUserList: #{$cornflowerBlue};
-//   --colorUsersList: #{$governorBay};
-//   --colorError: #{$red};
-//   --bgColorFooter: #{$black};
-//   --colorUserWrapper: #{$black};
-//   --bgColorUserWrapper: #{$gray-0-18};
-//   --shadowColorUserWrapper: #{$codeGray};
-//   --shadowColorUSerWrapperHover: #{$blue};
-//   --colorFooter: #{$white};
-// }
-
-// @media (data-theme: theme-dark) {
-//   :root {
-//     --bgColorPrimary: #{$indigo};
-//     --bgColorSecondary: #{$black};
-//     --colorNavLink: #{$white};
-//     --bgColorUserList: #{$white};
-//     --colorUsersList: #{$white};
-//     --colorError: #{$red};
-//     --bgColorFooter: #{$black};
-//     --colorUserWrapper: #{$white};
-//     --bgColorUserWrapper: #{$gray-0-18};
-//     --shadowColorUserWrapper: #{$codeGray};
-//     --shadowColorUSerWrapperHover: #{$blue};
-//     --colorFooter: #{$white};
-//   }
-// }
-
-//*******//
-
 :root {
   --bgColorPrimary: #{$indigo};
   --bgColorSecondary: #{$mystic};
@@ -114,22 +10,20 @@
   --bgColorUserWrapper: #{$gray-0-18};
   --shadowColorUserWrapper: #{$codeGray};
   --shadowColorUSerWrapperHover: #{$blue};
-  --colorFooter: #{$white};
+  --bgColorFooter: #{$black};
 }
 
-@media (prefers-color-scheme) {
-  :root {
-    --bgColorPrimary: #{$indigo};
-    --bgColorSecondary: #{$black};
-    --colorNavLink: #{$white};
-    --bgColorUserList: #{$white};
-    --colorUsersList: #{$white};
-    --colorError: #{$red};
-    --bgColorFooter: #{$black};
-    --colorUserWrapper: #{$white};
-    --bgColorUserWrapper: #{$gray-0-18};
-    --shadowColorUserWrapper: #{$codeGray};
-    --shadowColorUSerWrapperHover: #{$blue};
-    --colorFooter: #{$white};
-  }
+[data-theme='theme-dark'] {
+  --bgColorPrimary: #{$indigo};
+  --bgColorSecondary: #{$black};
+  --colorNavLink: #{$white};
+  --bgColorUserList: #{$white};
+  --colorUsersList: #{$white};
+  --colorError: #{$red};
+  --bgColorFooter: #{$black};
+  --colorUserWrapper: #{$white};
+  --bgColorUserWrapper: #{$gray-0-18};
+  --shadowColorUserWrapper: #{$codeGray};
+  --shadowColorUSerWrapperHover: #{$blue};
+  --bgColorFooter: #{$black};
 }
