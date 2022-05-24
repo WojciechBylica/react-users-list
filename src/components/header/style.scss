@@ -1,22 +1,47 @@
 .header {
-    background: #000000;
-    color: #ffffff;
-    width: 100%;
+  background: var(--bgColorHeader);
+  color: var(--colorHeader);
+  width: 100%;
 }
 
 .header__box {
-    max-width: 1238px;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
+  max-width: 1238px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .header__title {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 8px 8px 16px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 8px 8px 16px;
+}
+
+.header__button {
+  border: 1px solid var(--borderColorButton);
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgColorButton);
+  cursor: pointer;
+  user-select: none;
+  color: var(--colorButton);
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+.header__buttonBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 130px;
 }

@@ -11,6 +11,11 @@
   --shadowColorUserWrapper: #{$codeGray};
   --shadowColorUSerWrapperHover: #{$blue};
   --bgColorFooter: #{$black};
+  --colorButton: #{$white};
+  --bgColorButton: #{$indigo};
+  --borderColorButton: #{$anzac};
+  --colorHeader: #{$white};
+  --bgColorHeader: #{$black};
 }
 
 [data-theme='theme-dark'] {
@@ -26,4 +31,9 @@
   --shadowColorUserWrapper: #{$codeGray};
   --shadowColorUSerWrapperHover: #{$blue};
   --bgColorFooter: #{$black};
+  --colorButton: #{$white};
+  --bgColorButton: #{$indigo};
+  --borderColorButton: #{$anzac};
+  --colorHeader: #{$white};
+  --bgColorHeader: #{$black};
 }

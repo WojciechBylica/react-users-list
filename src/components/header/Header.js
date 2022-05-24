@@ -2,6 +2,7 @@ import { Nav } from '../index';
 import './style.scss';
 import image from './logo.png';
 import { NavLink } from 'react-router-dom';
+import ThemeSetter from './ThemeSetter';
 
 const Header = () => (
   <header className="header">
@@ -12,7 +13,10 @@ const Header = () => (
           Users List
         </h1>
       </NavLink>
-      <Nav />
+      <div className="header__buttonBox">
+        <Nav />
+        <ThemeSetter />
+      </div>
     </div>
   </header>
 );

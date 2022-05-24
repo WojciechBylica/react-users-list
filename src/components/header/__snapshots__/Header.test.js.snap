@@ -25,16 +25,27 @@ exports[`should render ok 1`] = `
         Users List
       </h1>
     </a>
-    <nav>
-      <a
-        aria-current="page"
-        className="navigation__link active"
-        href="#/"
+    <div
+      className="header__buttonBox"
+    >
+      <nav>
+        <a
+          aria-current="page"
+          className="navigation__link active"
+          href="#/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </nav>
+      <button
+        aria-label="change theme"
+        className="header__button"
         onClick={[Function]}
       >
-        Home
-      </a>
-    </nav>
+        ☀︎
+      </button>
+    </div>
   </div>
 </header>
 `;
